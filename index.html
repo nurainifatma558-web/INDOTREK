@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoTrek - Panduan & Booking Pendakian Gunung Indonesia</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.85)), url("Rinjani.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md shadow-md border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-compass text-emerald-500 text-2xl animate-pulse"></i>
+                    <span class="font-bold text-xl tracking-wider text-white">INDO<span class="text-emerald-500">TREK</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#hero" class="text-slate-300 hover:text-emerald-400 transition">Beranda</a>
+                    <a href="#level" class="text-slate-300 hover:text-emerald-400 transition">Pilih Tingkatan</a>
+                    <a href="#gunung" class="text-slate-300 hover:text-emerald-400 transition">Eksplorasi & Pesan</a>
+                    <a href="#tips" class="text-slate-300 hover:text-emerald-400 transition">Tips Pendaki</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="text-emerald-400 font-semibold tracking-widest text-xs uppercase bg-emerald-950/60 px-4 py-1.5 rounded-full border border-emerald-800 inline-block mb-4">Sistem Booking Langsung Basecamp</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">Cari Jalur Pendakian & Pesan Tiket Online</h1>
+            <p class="text-base md:text-lg text-slate-300 mb-8 max-w-2xl mx-auto">Temukan info harga simaksi, letak geografis, jalur resmi, dan pesan langsung kuota pendakian atau pemandu (porter/guide) via WhatsApp resmi.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#gunung" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                    Pilih Gunung & Booking <i class="fa-solid fa-cart-shopping ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="level" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Pilih Trek Sesuai Pengalaman Anda</h2>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Sesuaikan pilihan gunung dengan kesiapan fisik Anda. Setiap level memiliki paket layanan basecamp yang berbeda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm transition group">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl mb-6"><i class="fa-solid fa-baby-carriage"></i></div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">Pemula (Easy)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Ketinggian rendah, jalur tertata. Paket booking biasanya termasuk tiket simaksi dan opsional sewa tenda di basecamp.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm transition group">
+                    <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6"><i class="fa-solid fa-person-hiking"></i></div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">Menengah (Medium)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Jalur mulai bervariasi dengan tanjakan akar pohon. Pendaki disarankan memesan porter logistik lokal demi kenyamanan fisik.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm transition group">
+                    <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mb-6"><i class="fa-solid fa-skull-crossbones"></i></div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">Profesional (Hard/Pro)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Ketinggian ekstrem dan cuaca tidak menentu. Sistem mewajibkan atau menyarankan paket booking lengkap (Simaksi + Guide profesional).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gunung" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Informasi Jalur Resmi & Rincian Tiket Masuk</h2>
+                <p class="mt-4 text-slate-600">Pilih salah satu gunung di bawah ini untuk melihat detail tarif per orang (WNI/WNA) beserta form pemesanan langsung.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 mb-10 bg-white p-2 rounded-2xl max-w-4xl mx-auto shadow-sm">
+                <button onclick="pilihGunung('prau')" id="btn-prau" class="tab-btn flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all bg-emerald-600 text-white shadow-sm">Gunung Prau</button>
+                <button onclick="pilihGunung('merbabu')" id="btn-merbabu" class="tab-btn flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all text-slate-600 hover:text-slate-900">Gunung Merbabu</button>
+                <button onclick="pilihGunung('rinjani')" id="btn-rinjani" class="tab-btn flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all text-slate-600 hover:text-slate-900">Gunung Rinjani</button>
+                <button onclick="pilihGunung('kerinci')" id="btn-kerinci" class="tab-btn flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all text-slate-600 hover:text-slate-900">Gunung Kerinci</button>
+            </div>
+
+            <div id="konten-gunung" class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200 min-h-[500px]">
+                </div>
+        </div>
+    </section>
+
+    <section id="tips" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider text-xs uppercase bg-emerald-50 px-4 py-1.5 rounded-full border border-emerald-200 inline-block mb-3">Safety First</span>
+                <h2 class="text-3xl font-bold text-slate-900">Panduan & Tips Keselamatan Mendaki</h2>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Mendaki gunung adalah aktivitas berisiko tinggi. Pastikan Anda mempelajari poin-poin krusial di bawah ini demi kenyamanan dan keselamatan bersama.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-950 mb-2">Persiapan Fisik</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">Lakukan latihan kardio seperti jogging, bersepeda, atau naik turun tangga minimal 1-2 minggu sebelum hari pendakian untuk memperkuat otot kaki dan paru-paru.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-950 mb-2">Manajemen Pakaian</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">Gunakan metode *layering* (pakaian cepat kering, jaket polar fleece, dan jaket windproof/waterproof). Hindari pakaian berbahan jeans karena menahan dingin saat basah.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-950 mb-2">Logistik & Air</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">Bawalah air minimal 2-3 liter per orang serta makanan padat kalori tinggi (cokelat, kurma, madu). Kelola konsumsi makanan agar energi tetap stabil di jalur tanjakan.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-trash-arrow-up"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-950 mb-2">Patuhi Aturan & Alam</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">Bawa kembali seluruh sampah Anda ke basecamp. Hormati adat istiadat setempat, jangan merusak ekosistem (vandalism), dan jangan memaksakan puncak jika cuaca buruk.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-emerald-950 text-emerald-100 p-6 rounded-2xl border border-emerald-800 text-center text-xs md:text-sm max-w-3xl mx-auto">
+                <i class="fa-solid fa-triangle-exclamation mr-2 text-emerald-400"></i> <strong>Penting:</strong> Selalu catat nomor darurat basecamp dan periksa status buka/tutup jalur pendakian secara berkala sebelum berangkat!
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-slate-900 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2026 INDOTREK Nusantara. Semua Hak Dilindungi. Booking Trek Aman & Terpercaya.</p>
+        </div>
+    </footer >
+
+    <script>
+        // NOMOR WHATSAPP ADMIN BASECAMP
+        const NOMOR_WHATSAPP_ADMIN = "6285896190953"; 
+
+        // CONFIGURASI GAMBAR JALUR GUNUNG
+        const DAFTAR_GAMBAR_GUNUNG = {
+            prau:    "g prau2.jpg", 
+            merbabu: "g merbabu.jpg",
+            rinjani: "Rinjani.jpg",
+            kerinci: "g kerinci.jpg"
+        };
+
+        // Database Gunung dengan tambahan Rincian Harga Tiket per Orang
+        const databaseGunung = {
+            prau: {
+                id: "prau",
+                nama: "Gunung Prau (2.565 MDPL)",
+                tingkatan: "Pemula (Easy)",
+                warnaTingkat: "text-emerald-600 bg-emerald-50 border-emerald-200",
+                letak: "Kawasan Dataran Tinggi Dieng, Jawa Tengah",
+                jalurPilihan: ["Patak Banteng", "Kalilembu", "Dieng Kulon", "Wates"],
+                deskripsi: "Sangat ramah bagi pendaki baru. Jalur pendakian singkat dengan pemandangan lanskap menakjubkan.",
+                icon: "fa-seedling",
+                harga: {
+                    wniBiasa: "Rp 30.000",
+                    wniLibur: "Rp 35.000",
+                    wnaBiasa: "Rp 150.000",
+                    wnaLibur: "Rp 150.000"
+                }
+            },
+            merbabu: {
+                id: "merbabu",
+                nama: "Gunung Merbabu (3.142 MDPL)",
+                tingkatan: "Menengah (Medium)",
+                warnaTingkat: "text-amber-600 bg-amber-50 border-amber-200",
+                letak: "Boyolali / Magelang, Jawa Tengah",
+                jalurPilihan: ["Selo (Boyolali)", "Suwanting (Magelang)", "Wekas"],
+                deskripsi: "Menyuguhkan sabana hijau luas berlatar belakang puncak Gunung Merapi.",
+                icon: "fa-mountain-sun",
+                harga: {
+                    wniBiasa: "Rp 35.000",
+                    wniLibur: "Rp 45.000",
+                    wnaBiasa: "Rp 200.000",
+                    wnaLibur: "Rp 300.000"
+                }
+            },
+            rinjani: {
+                id: "rinjani",
+                nama: "Gunung Rinjani (3.726 MDPL)",
+                tingkatan: "Profesional (Hard / Pro)",
+                warnaTingkat: "text-red-600 bg-red-50 border-red-200",
+                letak: "Pulau Lombok, Nusa Tenggara Barat",
+                jalurPilihan: ["Sembalun", "Senaru", "Torean"],
+                deskripsi: "Keindahan kaldera Segara Anak yang luar biasa magis. Memerlukan fisik prima.",
+                icon: "fa-fire",
+                harga: {
+                    wniBiasa: "Rp 45.000",
+                    wniLibur: "Rp 60.000",
+                    wnaBiasa: "Rp 250.000",
+                    wnaLibur: "Rp 350.000"
+                }
+            },
+            kerinci: {
+                id: "kerinci",
+                nama: "Gunung Kerinci (3.805 MDPL)",
+                tingkatan: "Profesional (Hard / Pro)",
+                warnaTingkat: "text-purple-600 bg-purple-50 border-purple-200",
+                letak: "Kersik Tuo, Jambi, Sumatera",
+                jalurPilihan: ["Kersik Tuo"],
+                deskripsi: "Gunung api aktif tertinggi di Indonesia, menembus hutan rimba Sumatra yang lebat.",
+                icon: "fa-cloud-meatball",
+                harga: {
+                    wniBiasa: "Rp 35.000",
+                    wniLibur: "Rp 45.000",
+                    wnaBiasa: "Rp 220.000",
+                    wnaLibur: "Rp 320.000"
+                }
+            }
+        };
+
+        // Fungsi Render Informasi Gunung, Rincian Tiket, dan Form Booking Sekaligus
+        function pilihGunung(idGunung) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-sm');
+                btn.classList.add('text-slate-600', 'hover:text-slate-900');
+            });
+            
+            const btnAktif = document.getElementById(`btn-${idGunung}`);
+            if (btnAktif) {
+                btnAktif.classList.add('bg-emerald-600', 'text-white', 'shadow-sm');
+                btnAktif.classList.remove('text-slate-600', 'hover:text-slate-900');
+            }
+
+            const data = databaseGunung[idGunung];
+            const gambar = DAFTAR_GAMBAR_GUNUNG[idGunung];
+            const kontainer = document.getElementById('konten-gunung');
+
+            let opsiJalurHTML = "";
+            data.jalurPilihan.forEach(jl => {
+                opsiJalurHTML += `<option value="${jl}">${jl}</option>`;
+            });
+            
+            kontainer.innerHTML = `
+                <div class="grid md:grid-cols-2 gap-0">
+                    <div class="p-8 md:p-12 flex flex-col justify-between border-b md:border-b-0 md:border-r border-slate-100">
+                        <div>
+                            <div class="flex items-center gap-3 text-emerald-600 mb-4">
+                                <i class="fa-solid ${data.icon} text-2xl"></i>
+                                <span class="font-bold tracking-wide uppercase text-xs">Informasi Destinasi</span>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">${data.nama}</h3>
+                            <div class="mb-4">
+                                <span class="text-xs font-bold border px-3 py-1 rounded-full ${data.warnaTingkat}">Level: ${data.tingkatan}</span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">${data.deskripsi}</p>
+                            <div class="space-y-2 border-t border-slate-100 pt-4 text-sm mb-6">
+                                <div><span class="block text-xs font-bold text-slate-400 uppercase">Letak:</span><span class="font-semibold text-slate-800">${data.letak}</span></div>
+                            </div>
+
+                            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                                <span class="block text-xs font-bold text-slate-500 uppercase mb-3"><i class="fa-solid fa-tags text-emerald-600 mr-1"></i> Rincian Tarif Simaksi (Per Orang)</span>
+                                <table class="w-full text-xs text-left text-slate-600 border-collapse">
+                                    <thead>
+                                        <tr class="border-b border-slate-300 text-slate-400 font-bold">
+                                            <th class="pb-2">Kategori</th>
+                                            <th class="pb-2 text-center">Hari Biasa</th>
+                                            <th class="pb-2 text-center">Hari Libur</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-200 font-medium">
+                                        <tr>
+                                            <td class="py-2.5 font-bold text-slate-800">Pendaki WNI</td>
+                                            <td class="py-2.5 text-center text-emerald-700">${data.harga.wniBiasa}</td>
+                                            <td class="py-2.5 text-center text-emerald-700 font-bold">${data.harga.wniLibur}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2.5 font-bold text-slate-800">Pendaki WNA</td>
+                                            <td class="py-2.5 text-center text-slate-700">${data.harga.wnaBiasa}</td>
+                                            <td class="py-2.5 text-center text-slate-700 font-bold">${data.harga.wnaLibur}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="mt-6 h-40 md:h-52 rounded-2xl bg-cover bg-center shadow-inner" style="background-image: url('${gambar}')"></div>
+                    </div>
+
+                    <div class="p-8 md:p-12 bg-slate-50/50">
+                        <div class="flex items-center gap-3 text-emerald-600 mb-6">
+                            <i class="fa-solid fa-file-invoice text-xl"></i>
+                            <span class="font-bold tracking-wide uppercase text-xs">Formulir Booking Online</span>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Nama Ketua Kelompok</label>
+                                <input type="text" id="form-nama" placeholder="Contoh: Andi Wijaya" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Pilih Jalur Resmi</label>
+                                    <select id="form-jalur" class="w-full bg-white border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+                                        ${opsiJalurHTML}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Tanggal Naik</label>
+                                    <input type="date" id="form-tanggal" class="w-full bg-white border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Jumlah Personil (Orang)</label>
+                                    <input type="number" id="form-jumlah" min="1" value="1" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Layanan Tambahan</label>
+                                    <select id="form-layanan" class="w-full bg-white border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+                                        <option value="Hanya Tiket Simaksi">Hanya Tiket Simaksi</option>
+                                        <option value="Tiket + Sewa Porter">Tiket + Sewa Porter</option>
+                                        <option value="Paket Full Service (Tenda + Makan)">Paket Full Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4">
+                                <button onclick="kirimPesanWhatsApp('${data.nama}')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i> Pesan Via WhatsApp Resmi
+                                </button>
+                                <p class="text-[11px] text-slate-400 text-center mt-2.5">Sistem akan mengarahkan Anda otomatis ke aplikasi WhatsApp admin basecamp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Fungsi Eksekusi Pengiriman Pesan ke WhatsApp
+        function kirimPesanWhatsApp(namaGunung) {
+            const nama = document.getElementById('form-nama').value;
+            const jalur = document.getElementById('form-jalur').value;
+            const tanggal = document.getElementById('form-tanggal').value;
+            const jumlah = document.getElementById('form-jumlah').value;
+            const layanan = document.getElementById('form-layanan').value;
+
+            if (!nama) {
+                alert("Harap masukkan Nama Ketua Kelompok sebelum memesan!");
+                return;
+            }
+            if (!tanggal) {
+                alert("Harap tentukan tanggal pendakian Anda!");
+                return;
+            }
+
+            const teksPesan = 
+                `Halo Admin Basecamp, saya ingin membooking tiket pendakian resmi via website.\n\n` +
+                `⛰️ *Destinasi Gunung:* ${namaGunung}\n` +
+                `👤 *Nama Ketua:* ${nama}\n` +
+                `🛤️ *Pilihan Jalur:* Jalur ${jalur}\n` +
+                `📅 *Tanggal Naik:* ${tanggal}\n` +
+                `👥 *Jumlah Anggota:* ${jumlah} Orang\n` +
+                `💼 *Paket Layanan:* ${layanan}\n\n` +
+                `Mohon informasi kuota ketersediaan dan total pembayarannya. Terima kasih!`;
+
+            const URL_Final_WA = `https://api.whatsapp.com/send?phone=${NOMOR_WHATSAPP_ADMIN}&text=${encodeURIComponent(teksPesan)}`;
+            window.open(URL_Final_WA, '_blank');
+        }
+
+        window.onload = function() {
+            pilihGunung('prau'); 
+        };
+    </script>
+</body>
+</html>
